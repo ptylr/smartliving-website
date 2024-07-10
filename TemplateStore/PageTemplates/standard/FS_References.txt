@@ -4,12 +4,6 @@ gid=7220147b-39ff-4b67-ae6b-90e6e04af147
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
 
-[requiredProjectId]
-uid=standard
-gid=7220147b-39ff-4b67-ae6b-90e6e04af147
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
-
 [optionalId]
 uid=images
 gid=af7a5702-8a1a-401c-a6db-513067bfab17

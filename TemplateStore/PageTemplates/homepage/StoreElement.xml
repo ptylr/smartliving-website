@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEMPLATE comment="" filename="homepage" id="-2828570475331096276" previewPageRefUid="homepage_1" templateid="-2186647076419391743" type="page">
-	<ALLOWED enabled="content" templateid="10"/>
-	<ALLOWED enabled="content" templateid="11"/>
-	<ALLOWED enabled="content" templateid="12"/>
-	<ALLOWED enabled="content" templateid="13"/>
-	<ALLOWED enabled="content" templateid="14"/>
-	<ALLOWED enabled="content" templateid="5"/>
-	<ALLOWED enabled="content" templateid="6"/>
-	<ALLOWED enabled="content" templateid="7"/>
-	<ALLOWED enabled="content" templateid="8"/>
-	<ALLOWED enabled="content" templateid="9"/>
-	<ALLOWED enabled="top" templateid="15"/>
 	<EXTENSION file="html" link="html" replaceable="false" templateSet="9062318847741885912"/>
 	<LANG displayname="Homepage" language="DE"/>
 	<LANG displayname="Homepage" language="EN"/>
