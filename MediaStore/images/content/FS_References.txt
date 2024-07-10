@@ -4,9 +4,3 @@ gid=f973f267-291e-407f-9120-2fa63b6499ad
 uidType=MEDIASTORE_FOLDER
 class=de.espirit.firstspirit.store.access.mediastore.MediaFolderImpl
 
-[requiredProjectId]
-uid=metadata
-gid=b2c7cf16-33d2-4cf4-b16d-fa4fb256cd68
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
-

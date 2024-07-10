@@ -4,6 +4,12 @@ gid=7220147b-39ff-4b67-ae6b-90e6e04af147
 uidType=TEMPLATESTORE
 class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
 
+[requiredProjectId]
+uid=standard
+gid=7220147b-39ff-4b67-ae6b-90e6e04af147
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.PageTemplateImpl
+
 [optionalId]
 uid=images
 gid=af7a5702-8a1a-401c-a6db-513067bfab17
@@ -15,55 +21,20 @@ gid=b3d01642-b537-499d-8bb0-c6d17a5c078e
 uidType=MEDIASTORE_LEAF
 class=de.espirit.firstspirit.store.access.mediastore.MediaImpl
 
-uid=accordion
-gid=af4833fd-365b-4ca4-a895-47d851a505e6
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
-
 uid=add_new_section
 gid=40b6bb18-d72e-49d8-a92d-c78084905626
 uidType=TEMPLATESTORE_FORMATTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-
-uid=add_section_toolbar
-gid=80eb2873-20dc-4eef-b0af-4535da74729c
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
-
-uid=features
-gid=94fbd630-d793-4ccd-b6c9-b796ef1fe508
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
-
-uid=google_maps
-gid=2bf292d7-c900-414e-a6f8-6474dab4a444
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
-
-uid=interactive_image
-gid=900545a0-3a92-48fc-a469-91d6538a3795
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
 
 uid=javascript_collector
 gid=57757562-9038-4e33-b8c5-0d7a34cec929
 uidType=TEMPLATESTORE_FORMATTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
 
-uid=latest_news
-gid=9adff858-28c0-4cdd-93d0-113ffd36fc26
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
-
 uid=page_header
 gid=56db0440-5d0f-4906-9009-28c53a1e5241
 uidType=TEMPLATESTORE_FORMATTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-
-uid=product_category_teaser
-gid=951e06a0-704b-43e0-ad79-d6c22cf47690
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
 
 uid=reload_handling
 gid=a45a5ff8-df9d-475c-8b1f-9abe5bd48c0d
@@ -85,30 +56,10 @@ gid=35ae1a34-21bf-4c73-b75d-5ffe9b0261fa
 uidType=TEMPLATESTORE_FORMATTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
 
-uid=steps
-gid=a25e2388-5690-4c97-808b-04980299715d
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
-
-uid=table
-gid=90fab454-eaff-47ef-8265-24d58ab6b5c1
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
-
 uid=tailwind
 gid=2c8250df-414f-438c-8e4c-814bc3d50aed
 uidType=TEMPLATESTORE_FORMATTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
-
-uid=teaser
-gid=12bf80c9-de66-4007-8c86-ca30513d4fa1
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
-
-uid=text_image
-gid=bf543a0d-4072-4888-9e9c-374195d663d5
-uidType=TEMPLATESTORE
-class=de.espirit.firstspirit.store.access.templatestore.SectionTemplateImpl
 
 uid=footer
 gid=6df166fb-4885-4466-ab9b-2ee4e2104a3c

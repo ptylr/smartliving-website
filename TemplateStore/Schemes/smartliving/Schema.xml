@@ -14,42 +14,42 @@
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="4f3ecc81-0988-4c2f-b530-7f41276a6d2f" vName="released by"/>
 				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="c589e899-c01a-47f3-a59e-fd1c4d180ef7" vName="wf col"/>
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="6b82ba03-fb80-4dfa-a97b-75983af6c648" vName="wf id"/>
-				<xs:element type="xs:long" uuid="cc062a1d-80bf-466d-afea-cfec42ab1c00" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="3b08af34-4f56-43eb-a9b7-2afee07c825b" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="ea4f92c3-1eae-4bc8-bf01-5962fceef36a" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="cc062a1d-80bf-466d-afea-cfec42ab1c00" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="3b08af34-4f56-43eb-a9b7-2afee07c825b" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="ea4f92c3-1eae-4bc8-bf01-5962fceef36a" vName="FS_VALID_TO" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_author">
 			<xs:selector xpath="author"/>
 			<xs:attribute xpath="fs_id"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
 		</xs:key>
-		<xs:complexType uuid="83fcb4e3-1912-4271-98c3-e10b4c230955" vName="rt_author_news_newslist" visible="0">
+		<xs:complexType uuid="83fcb4e3-1912-4271-98c3-e10b4c230955" vName="RT_AUTHOR_NEWS_NEWSLIST" visible="0">
 			<xs:sequence>
-				<xs:element type="xs:long" uuid="abfbf0eb-e9a8-40eb-81ba-f44d52e5cb6e" vName="auth_fs_id" visible="0"/>
-				<xs:element type="xs:long" uuid="b1d3b0be-f630-418b-9fb5-609db47ed08f" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="d98c8881-beb5-487f-a9d5-624848710e3a" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="a7716a64-ce60-4d5f-8ea4-d4140742319b" vName="fs_valid_to" visible="0"/>
-				<xs:element type="xs:long" uuid="78508a24-b9b9-4bbb-bc6a-f35a89a06a5e" vName="news_fs_id" visible="0"/>
+				<xs:element type="xs:long" uuid="abfbf0eb-e9a8-40eb-81ba-f44d52e5cb6e" vName="AUTH_FS_ID" visible="0"/>
+				<xs:element type="xs:long" uuid="b1d3b0be-f630-418b-9fb5-609db47ed08f" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="d98c8881-beb5-487f-a9d5-624848710e3a" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="a7716a64-ce60-4d5f-8ea4-d4140742319b" vName="FS_VALID_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="78508a24-b9b9-4bbb-bc6a-f35a89a06a5e" vName="NEWS_FS_ID" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_rt_author_news_newsList">
-			<xs:selector xpath="rt_author_news_newslist"/>
-			<xs:attribute xpath="auth_fs_id"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
-			<xs:attribute xpath="news_fs_id"/>
+			<xs:selector xpath="RT_AUTHOR_NEWS_NEWSLIST"/>
+			<xs:attribute xpath="AUTH_FS_ID"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
+			<xs:attribute xpath="NEWS_FS_ID"/>
 		</xs:key>
 		<xs:keyref refer="news" source="author" tfield="newsList" vName="fk_rt_author_news_newsList_news">
-			<xs:selector xpath="rt_author_news_newslist"/>
-			<xs:attribute xpath="news_fs_id"/>
+			<xs:selector xpath="RT_AUTHOR_NEWS_NEWSLIST"/>
+			<xs:attribute xpath="NEWS_FS_ID"/>
 		</xs:keyref>
 		<xs:keyref refer="author" source="news" tfield="authorList" vName="fk_rt_author_news_newsList_author">
-			<xs:selector xpath="rt_author_news_newslist"/>
-			<xs:attribute xpath="auth_fs_id"/>
+			<xs:selector xpath="RT_AUTHOR_NEWS_NEWSLIST"/>
+			<xs:attribute xpath="AUTH_FS_ID"/>
 		</xs:keyref>
 		<xs:complexType uuid="8ed92123-3254-4d29-9738-189b4193d749" vName="category">
 			<xs:sequence>
@@ -62,42 +62,42 @@
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="806a24f8-6d0b-49a2-8a67-c044528a0016" vName="released by"/>
 				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="a8f6609c-41b3-4780-aa64-477e881d19a2" vName="wf col"/>
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="c3feaf22-1af8-48a4-8bfe-4614a3e36e9d" vName="wf id"/>
-				<xs:element type="xs:long" uuid="b54d294d-fd6e-4275-8d26-123f1bd8daba" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="2543d17f-794a-4588-96ab-880ba2ccccb8" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="077cc89c-0583-4fe8-a0ce-da3fe61eaee5" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="b54d294d-fd6e-4275-8d26-123f1bd8daba" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="2543d17f-794a-4588-96ab-880ba2ccccb8" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="077cc89c-0583-4fe8-a0ce-da3fe61eaee5" vName="FS_VALID_TO" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_category">
 			<xs:selector xpath="category"/>
 			<xs:attribute xpath="fs_id"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
 		</xs:key>
-		<xs:complexType uuid="daa4914e-8d8e-4b84-b139-0a524ca668cf" vName="rt_category_product_categorylist" visible="0">
+		<xs:complexType uuid="daa4914e-8d8e-4b84-b139-0a524ca668cf" vName="RT_CATEGORY_PRODUCT_CATEGORYLIST" visible="0">
 			<xs:sequence>
-				<xs:element type="xs:long" uuid="7d837815-9388-42c0-b8bf-89a17e0d6b41" vName="cate_fs_id" visible="0"/>
-				<xs:element type="xs:long" uuid="9e157841-035f-4ba2-add4-3a343d690aab" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="d301f757-5446-4360-b9c7-1f9f1630db57" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="d60809e8-e72c-4942-b691-fd7163123c6c" vName="fs_valid_to" visible="0"/>
-				<xs:element type="xs:long" uuid="aa73f9be-7773-4b28-a34d-5e549007d1d4" vName="prod_fs_id" visible="0"/>
+				<xs:element type="xs:long" uuid="7d837815-9388-42c0-b8bf-89a17e0d6b41" vName="CATE_FS_ID" visible="0"/>
+				<xs:element type="xs:long" uuid="9e157841-035f-4ba2-add4-3a343d690aab" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="d301f757-5446-4360-b9c7-1f9f1630db57" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="d60809e8-e72c-4942-b691-fd7163123c6c" vName="FS_VALID_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="aa73f9be-7773-4b28-a34d-5e549007d1d4" vName="PROD_FS_ID" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_rt_category_product_categoryList">
-			<xs:selector xpath="rt_category_product_categorylist"/>
-			<xs:attribute xpath="cate_fs_id"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
-			<xs:attribute xpath="prod_fs_id"/>
+			<xs:selector xpath="RT_CATEGORY_PRODUCT_CATEGORYLIST"/>
+			<xs:attribute xpath="CATE_FS_ID"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
+			<xs:attribute xpath="PROD_FS_ID"/>
 		</xs:key>
 		<xs:keyref refer="product" source="category" tfield="productList" vName="fk_rt_category_product_categoryList_product">
-			<xs:selector xpath="rt_category_product_categorylist"/>
-			<xs:attribute xpath="prod_fs_id"/>
+			<xs:selector xpath="RT_CATEGORY_PRODUCT_CATEGORYLIST"/>
+			<xs:attribute xpath="PROD_FS_ID"/>
 		</xs:keyref>
 		<xs:keyref refer="category" source="product" tfield="categoryList" vName="fk_rt_category_product_categoryList_category">
-			<xs:selector xpath="rt_category_product_categorylist"/>
-			<xs:attribute xpath="cate_fs_id"/>
+			<xs:selector xpath="RT_CATEGORY_PRODUCT_CATEGORYLIST"/>
+			<xs:attribute xpath="CATE_FS_ID"/>
 		</xs:keyref>
 		<xs:complexType uuid="dbb5a597-7d4e-41a7-8768-4bd873c20818" vName="location">
 			<xs:sequence>
@@ -107,25 +107,25 @@
 				<xs:element hidden="1" javaType="java.util.UUID" length="16" nullable="1" readonly="1" type="xs:uuid" uuid="fe00b182-6e26-4f5f-bb78-11730bd41893" vName="FS_GID"/>
 				<xs:element hidden="1" javaType="java.lang.Integer" type="xs:long" uuid="e23f8513-9481-464d-854b-cf73955d0999" vName="fs_id"/>
 				<xs:element hidden="1" javaType="de.espirit.or.impl.schema.JsonValue" length="65535" nullable="1" type="xs:json" uuid="4f2a9464-17e9-4633-b539-03c9ea8a3c26" vName="FS_META_DATA"/>
-				<xs:element javaType="java.lang.Double" nullable="1" type="xs:decimal" uuid="8b75aa1b-85ab-40c2-9052-1ccbdd6c2d5d" vName="lat"/>
-				<xs:element javaType="java.lang.Double" nullable="1" type="xs:decimal" uuid="aac92131-de70-469d-855a-4bd985308e33" vName="long"/>
+				<xs:element javaType="java.lang.Double" length="10" nullable="1" type="xs:decimal" uuid="8b75aa1b-85ab-40c2-9052-1ccbdd6c2d5d" vName="lat"/>
+				<xs:element javaType="java.lang.Double" length="10" nullable="1" type="xs:decimal" uuid="aac92131-de70-469d-855a-4bd985308e33" vName="long"/>
 				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="3df49739-c054-44bb-92a7-1fa77f8dffea" vName="name_DE"/>
 				<xs:element javaType="java.lang.String" length="256" nullable="1" type="xs:string" uuid="709dfb54-1784-4c1b-945e-afa2bcc48128" vName="name_EN"/>
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="748001d4-6e67-40f6-afc8-072aa3a24f71" vName="released by"/>
 				<xs:element javaType="de.espirit.firstspirit.client.editorcomponent.EditorWrapper" length="65535" nullable="1" type="xml" uuid="342be263-b494-4318-baea-0ba64cb68bbf" vName="route_link"/>
 				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="7683dbfa-dd84-45b8-8840-e28f7086b813" vName="wf col"/>
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="f2e42064-c73a-429c-92c3-c52ac0610fdd" vName="wf id"/>
-				<xs:element type="xs:long" uuid="119a6448-e63c-463e-a2b4-201bf35a7afe" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="9e2c374b-3f60-4f88-af34-7026f41086c8" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="61a70739-45d7-4757-867a-f932e2e6a9b1" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="119a6448-e63c-463e-a2b4-201bf35a7afe" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="9e2c374b-3f60-4f88-af34-7026f41086c8" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="61a70739-45d7-4757-867a-f932e2e6a9b1" vName="FS_VALID_TO" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_location">
 			<xs:selector xpath="location"/>
 			<xs:attribute xpath="fs_id"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
 		</xs:key>
 		<xs:complexType uuid="b6906160-8b7a-46c6-8fe9-4280020d5625" vName="news">
 			<xs:sequence>
@@ -152,43 +152,43 @@
 				<xs:element javaType="java.lang.String" length="512" nullable="1" type="xs:string" uuid="9bc96921-b70a-4394-acf1-b294b5fc7d2f" vName="teaser_text_EN"/>
 				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="9ce5bf8b-5f59-43eb-a304-edd9faf49b92" vName="wf col"/>
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="9428f6b4-56d2-435d-b298-f21aa417346c" vName="wf id"/>
-				<xs:element nullable="1" type="xs:long" uuid="42acc9ce-dd83-4383-b80f-7dacffcbb88a" vName="auth_fs_id" visible="0"/>
-				<xs:element type="xs:long" uuid="56fb9bff-fe1f-4c3e-94e2-246c253a9c5b" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="5ecad52e-c8c1-48cc-acd2-4d69ee10eace" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="0a5e520b-d659-4703-9898-ba809cd64419" vName="fs_valid_to" visible="0"/>
+				<xs:element nullable="1" type="xs:long" uuid="42acc9ce-dd83-4383-b80f-7dacffcbb88a" vName="AUTH_FS_ID" visible="0"/>
+				<xs:element type="xs:long" uuid="56fb9bff-fe1f-4c3e-94e2-246c253a9c5b" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="5ecad52e-c8c1-48cc-acd2-4d69ee10eace" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="0a5e520b-d659-4703-9898-ba809cd64419" vName="FS_VALID_TO" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_news">
 			<xs:selector xpath="news"/>
 			<xs:attribute xpath="fs_id"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
 		</xs:key>
-		<xs:complexType uuid="3223a03e-9fbd-4d49-97ed-25c83d916961" vName="rt_news_tag_newslist" visible="0">
+		<xs:complexType uuid="3223a03e-9fbd-4d49-97ed-25c83d916961" vName="RT_NEWS_TAG_NEWSLIST" visible="0">
 			<xs:sequence>
-				<xs:element type="xs:long" uuid="894ab913-3206-44df-8c2e-ffe396648515" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="8b7b44d3-4598-4d6d-ade8-e8f3e4a6387a" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="383aaeb1-1e8c-4ba2-b15b-161245b28957" vName="fs_valid_to" visible="0"/>
-				<xs:element type="xs:long" uuid="cb75745a-613d-431b-a60b-0d73ffaddb04" vName="news_fs_id" visible="0"/>
-				<xs:element type="xs:long" uuid="00565d40-aec2-4f8f-a1ad-98030555dc05" vName="tag_fs_id" visible="0"/>
+				<xs:element type="xs:long" uuid="894ab913-3206-44df-8c2e-ffe396648515" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="8b7b44d3-4598-4d6d-ade8-e8f3e4a6387a" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="383aaeb1-1e8c-4ba2-b15b-161245b28957" vName="FS_VALID_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="cb75745a-613d-431b-a60b-0d73ffaddb04" vName="NEWS_FS_ID" visible="0"/>
+				<xs:element type="xs:long" uuid="00565d40-aec2-4f8f-a1ad-98030555dc05" vName="TAG_FS_ID" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_rt_news_tag_newsList">
-			<xs:selector xpath="rt_news_tag_newslist"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
-			<xs:attribute xpath="news_fs_id"/>
-			<xs:attribute xpath="tag_fs_id"/>
+			<xs:selector xpath="RT_NEWS_TAG_NEWSLIST"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
+			<xs:attribute xpath="NEWS_FS_ID"/>
+			<xs:attribute xpath="TAG_FS_ID"/>
 		</xs:key>
 		<xs:keyref refer="tag" source="news" tfield="tagList" vName="fk_rt_news_tag_newsList_tag">
-			<xs:selector xpath="rt_news_tag_newslist"/>
-			<xs:attribute xpath="tag_fs_id"/>
+			<xs:selector xpath="RT_NEWS_TAG_NEWSLIST"/>
+			<xs:attribute xpath="TAG_FS_ID"/>
 		</xs:keyref>
 		<xs:keyref refer="news" source="tag" tfield="newsList" vName="fk_rt_news_tag_newsList_news">
-			<xs:selector xpath="rt_news_tag_newslist"/>
-			<xs:attribute xpath="news_fs_id"/>
+			<xs:selector xpath="RT_NEWS_TAG_NEWSLIST"/>
+			<xs:attribute xpath="NEWS_FS_ID"/>
 		</xs:keyref>
 		<xs:complexType uuid="af3eebed-da10-414d-aa39-10a190d86fd6" vName="product">
 			<xs:sequence>
@@ -210,17 +210,17 @@
 				<xs:element javaType="java.lang.String" length="512" nullable="1" type="xs:string" uuid="e06a3fae-90a6-4cb2-97eb-fda8aad6f687" vName="teaser_text_EN"/>
 				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="c55c0cf7-ef59-4f43-b1b6-a41fa447465a" vName="wf col"/>
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="02f53baa-e60f-48a0-ad97-e849ac7ea682" vName="wf id"/>
-				<xs:element type="xs:long" uuid="56fabe56-1a37-4fff-a78b-0d24bfdb8ce4" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="416e5978-6963-44b2-9660-a1325ad285ce" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="72e6d7a7-3890-44fc-867b-8dda9d3f1548" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="56fabe56-1a37-4fff-a78b-0d24bfdb8ce4" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="416e5978-6963-44b2-9660-a1325ad285ce" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="72e6d7a7-3890-44fc-867b-8dda9d3f1548" vName="FS_VALID_TO" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_product">
 			<xs:selector xpath="product"/>
 			<xs:attribute xpath="fs_id"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
 		</xs:key>
 		<xs:complexType uuid="7e26b63a-7147-490e-a6ca-a3fdaadf44ac" vName="tag">
 			<xs:sequence>
@@ -233,26 +233,26 @@
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="519e977a-3b92-492a-b876-66b164c1fc1b" vName="released by"/>
 				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="83ac5315-99f2-4c44-914d-b5500f4b0ce7" vName="wf col"/>
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="ebe3cbd2-db86-4e99-80b7-e493707462c1" vName="wf id"/>
-				<xs:element type="xs:long" uuid="d201df08-96b6-4efc-a653-cd57dfd0db11" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="23ab2f8d-b9dc-4b48-a7b6-0990c6d7f896" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="c02d58f9-a41d-4b0b-8341-24fd40a30f0b" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="d201df08-96b6-4efc-a653-cd57dfd0db11" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="23ab2f8d-b9dc-4b48-a7b6-0990c6d7f896" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="c02d58f9-a41d-4b0b-8341-24fd40a30f0b" vName="FS_VALID_TO" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_tag">
 			<xs:selector xpath="tag"/>
 			<xs:attribute xpath="fs_id"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
 		</xs:key>
 		<xs:complexType uuid="c215174d-a68c-447b-b44e-c344219e6dec" vName="transaction_counter" visible="0">
 			<xs:sequence>
-				<xs:element type="xs:long" uuid="532375ac-6db5-4981-9807-f29860b44381" vName="counter" visible="0"/>
+				<xs:element type="xs:long" uuid="532375ac-6db5-4981-9807-f29860b44381" vName="COUNTER" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key autoIncrement="1" vName="pk_transaction_counter">
-			<xs:selector xpath="transaction_counter"/>
-			<xs:attribute xpath="counter"/>
+			<xs:selector xpath="TRANSACTION_COUNTER"/>
+			<xs:attribute xpath="COUNTER"/>
 		</xs:key>
 		<meta name="version">1.1</meta>
 	</xs:element>

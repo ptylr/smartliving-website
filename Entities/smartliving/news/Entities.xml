@@ -19,7 +19,7 @@
 			<COLUMN name="subheadline_EN"/>
 			<COLUMN name="teaser_text_DE">Die International CES wird von der Consumer Technology Association (CTA) organisiert, einer Handelsorganisation, die mehr als 2.000 Unternehmen der Unterhaltungselektronik in den Vereinigten Staaten vertritt.</COLUMN>
 			<COLUMN name="teaser_text_EN">International CES is organized by the Consumer Technology Association (CTA), a trade organization representing more than 2,000 consumer electronics companies in the United States.</COLUMN>
-			<NULL_COLUMN name="auth_fs_id"/>
+			<NULL_COLUMN name="AUTH_FS_ID"/>
 		</ROW>
 		<ROW>
 			<COLUMN name="FS_GID">ddd42fc0-6c9f-4734-9e94-3a3178e3e346</COLUMN>
@@ -39,7 +39,7 @@
 			<COLUMN name="subheadline_EN"/>
 			<COLUMN name="teaser_text_DE">Intelligente Sprachassistenten haben es vom Handy bis ins Wohnzimmer geschafft, wo sie mit Musik und aktuellen Informationen unterhalten. Die Lösung von Google heißt Google Home. Was kann es und wo gibt es Defizite?</COLUMN>
 			<COLUMN name="teaser_text_EN">Intelligent language assistants have made it from the cell phone to the living room, where they entertain with music and the latest information. Google's solution is called Google Home. What can it do and where are there deficits?</COLUMN>
-			<NULL_COLUMN name="auth_fs_id"/>
+			<NULL_COLUMN name="AUTH_FS_ID"/>
 		</ROW>
 		<ROW>
 			<COLUMN name="FS_GID">1f5ca5ef-10a5-425b-a01d-f81707b5840b</COLUMN>
@@ -59,7 +59,7 @@
 			<COLUMN name="subheadline_EN"/>
 			<COLUMN name="teaser_text_DE">Immer mehr Haushalte nutzen inzwischen die Smart Home Technologie. Zeitgleich kommen immer mehr Elektroautos auf die Straße. Was liegt also näher, als die Integration einer Ladestation?</COLUMN>
 			<COLUMN name="teaser_text_EN">More and more households are now using smart home technology. At the same time, more and more electric cars are coming onto the streets. So, what could be more obvious than the integration of a charging station?</COLUMN>
-			<NULL_COLUMN name="auth_fs_id"/>
+			<NULL_COLUMN name="AUTH_FS_ID"/>
 		</ROW>
 		<ROW>
 			<COLUMN name="FS_GID">407dcd92-aba7-4d42-be86-7fcee11fc2f2</COLUMN>
@@ -79,7 +79,7 @@
 			<COLUMN name="subheadline_EN"/>
 			<COLUMN name="teaser_text_DE">Das Kaufverhalten in Deutschland hat sich geändert. Über 50 Millionen Deutsche kaufen regelmäßig online und tun dies meist bei Amazon. Aber was macht der Online Riese mit unseren Daten?</COLUMN>
 			<COLUMN name="teaser_text_EN">Buying behavior in Germany has changed. Over 50 million Germans regularly buy online and mostly do so from Amazon. But what does the online giant do with our data?</COLUMN>
-			<NULL_COLUMN name="auth_fs_id"/>
+			<NULL_COLUMN name="AUTH_FS_ID"/>
 		</ROW>
 		<ROW>
 			<COLUMN name="FS_GID">45534a05-83e4-464d-9764-7d01c79b94ae</COLUMN>
@@ -99,7 +99,7 @@
 			<COLUMN name="subheadline_EN"/>
 			<COLUMN name="teaser_text_DE">Neuerdings haben Roboterstaubsauger auch in deutschen Wohnzimmern Einzug gehalten. Die Frage ist allerdings, wie die Lebensqualität mit einem Staubsaugerroboter gesteigert werden kann.</COLUMN>
 			<COLUMN name="teaser_text_EN">Recently, robot vacuum cleaners have also found their way into German living rooms. However, the question is how the quality of life can be increased with a vacuum cleaner robot.</COLUMN>
-			<NULL_COLUMN name="auth_fs_id"/>
+			<NULL_COLUMN name="AUTH_FS_ID"/>
 		</ROW>
 		<ROW>
 			<COLUMN name="FS_GID">59b800b4-7c46-4f9a-b0e5-5fad15c73f65</COLUMN>
@@ -119,7 +119,7 @@
 			<COLUMN name="subheadline_EN"/>
 			<COLUMN name="teaser_text_DE">Babyphone gehackt - Der Aufstieg intelligenter Geräte und die Risiken intelligenter Technik.</COLUMN>
 			<COLUMN name="teaser_text_EN">Baby Monitor Hacked - The Rise of Smart Devices and the Risks of Smart Tech.</COLUMN>
-			<NULL_COLUMN name="auth_fs_id"/>
+			<NULL_COLUMN name="AUTH_FS_ID"/>
 		</ROW>
 		<ROW>
 			<COLUMN name="FS_GID">649d4a58-f900-423a-ba49-1d1c5a1de940</COLUMN>
@@ -139,7 +139,7 @@
 			<COLUMN name="subheadline_EN"/>
 			<COLUMN name="teaser_text_DE">Der deutsche Smart Home-Markt boomt. Bis 2022 wird sich die Anzahl der Smart Homes von aktuell 2 Millionen auf rund 8 Millionen deutsche Haushalte vervierfachen. Viele Kunden erhoffen hierdurch ihr Zuhause sicherer zu machen. Aber wird das eigene Zuhause dadurch überhaupt sicherer?</COLUMN>
 			<COLUMN name="teaser_text_EN">The German smart home market is booming. By 2022, the number of smart homes in Germany will quadruple from the current 2 million to around 8 million. Many customers hope that this will make their home safer. But does that make your own home any safer?</COLUMN>
-			<NULL_COLUMN name="auth_fs_id"/>
+			<NULL_COLUMN name="AUTH_FS_ID"/>
 		</ROW>
 		<ROW>
 			<COLUMN name="FS_GID">7e63a297-e276-482d-bfe9-3608f8d4af60</COLUMN>
@@ -159,7 +159,7 @@
 			<COLUMN name="subheadline_EN"/>
 			<COLUMN name="teaser_text_DE">Wie können technisch versierte Nutzer die Sicherheit ihres Smart Home-Systems durch den Einsatz eines VPN weiter verbessern?</COLUMN>
 			<COLUMN name="teaser_text_EN">How can tech-savvy users further improve the security of their smart home system by using a VPN?</COLUMN>
-			<NULL_COLUMN name="auth_fs_id"/>
+			<NULL_COLUMN name="AUTH_FS_ID"/>
 		</ROW>
 	</TABLE>
 </DATA>

@@ -13,26 +13,26 @@
 				<xs:element javaType="java.lang.String" length="512" nullable="1" type="xs:string" uuid="a43a9094-0ee1-4ae8-bd98-65ec3c422ed1" vName="translation_EN"/>
 				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="df1b60e0-2fe7-4e9c-a09c-e288e89f0e1a" vName="wf col"/>
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="c2755b27-06b2-4de8-8c82-3a745c4ad4ba" vName="wf id"/>
-				<xs:element type="xs:long" uuid="250aaf92-b00b-4ac1-b925-d73a54450108" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="b5c2edc4-60de-4a88-93ac-e620e2fc3807" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="129cd36c-505c-4b9a-a368-661fb95e62dc" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="250aaf92-b00b-4ac1-b925-d73a54450108" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="b5c2edc4-60de-4a88-93ac-e620e2fc3807" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="129cd36c-505c-4b9a-a368-661fb95e62dc" vName="FS_VALID_TO" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_translation">
 			<xs:selector xpath="translation"/>
 			<xs:attribute xpath="fs_id"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
 		</xs:key>
 		<xs:complexType uuid="c83dd70e-0f4c-40c6-a1fb-a1bceeae1ed6" vName="transaction_counter" visible="0">
 			<xs:sequence>
-				<xs:element type="xs:long" uuid="0d9c0c73-122c-4f93-8f72-1df5d622c015" vName="counter" visible="0"/>
+				<xs:element type="xs:long" uuid="0d9c0c73-122c-4f93-8f72-1df5d622c015" vName="COUNTER" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key autoIncrement="1" vName="pk_transaction_counter">
-			<xs:selector xpath="transaction_counter"/>
-			<xs:attribute xpath="counter"/>
+			<xs:selector xpath="TRANSACTION_COUNTER"/>
+			<xs:attribute xpath="COUNTER"/>
 		</xs:key>
 		<meta name="version">1.1</meta>
 	</xs:element>

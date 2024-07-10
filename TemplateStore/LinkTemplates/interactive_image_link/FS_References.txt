@@ -20,8 +20,3 @@ gid=5b3dc502-f98f-491f-9f54-d56251e3d112
 uidType=TEMPLATESTORE_LINKTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.LinkTemplateImpl
 
-uid=smartliving.product
-gid=593bbf90-9680-4e8d-b34b-4608a92c9d26
-uidType=TEMPLATESTORE_SCHEMA
-class=de.espirit.firstspirit.store.access.templatestore.TableTemplateImpl
-

@@ -29,17 +29,17 @@
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="84733cd4-0433-4655-9415-e95519f5713a" vName="wf id"/>
 				<xs:element javaType="java.lang.Long" nullable="1" type="xs:long" uuid="496f3752-5919-4f7d-abc0-d2272915337a" vName="wordCount"/>
 				<xs:element javaType="java.lang.String" length="100" nullable="1" type="xs:string" uuid="9ab44a0a-a19a-4493-a763-85bff73a40a3" vName="workflowOnImportId"/>
-				<xs:element type="xs:long" uuid="5fdc4756-415c-4c53-8d8e-352a07d3fbbd" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="af184fca-08a5-4f2b-8f3e-697135dcea4d" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="82158024-bd09-48e3-998a-e194591deafb" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="5fdc4756-415c-4c53-8d8e-352a07d3fbbd" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="af184fca-08a5-4f2b-8f3e-697135dcea4d" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="82158024-bd09-48e3-998a-e194591deafb" vName="FS_VALID_TO" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_requests">
 			<xs:selector xpath="requests"/>
 			<xs:attribute xpath="fs_id"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
 		</xs:key>
 		<xs:complexType uuid="f8e6378b-0485-46d4-8bb8-69e6bd766264" vName="task">
 			<xs:sequence>
@@ -54,26 +54,26 @@
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="69734958-9f93-4763-8a74-9fe14d9177bd" vName="released by"/>
 				<xs:element hidden="1" javaType="java.awt.Color" nullable="1" type="xs:integer" uuid="05e30f28-d224-4196-9c49-d036a1cc3257" vName="wf col"/>
 				<xs:element hidden="1" javaType="java.lang.Long" nullable="1" type="xs:long" uuid="0b104354-d4f4-4ae7-9924-3c4067383053" vName="wf id"/>
-				<xs:element type="xs:long" uuid="f73cca6b-8f6f-4573-a120-b4cb0f2dc0ba" vName="fs_release_to" visible="0"/>
-				<xs:element type="xs:long" uuid="f81893a2-1992-45db-a5c8-48da14d71546" vName="fs_valid_from" visible="0"/>
-				<xs:element type="xs:long" uuid="43f0b88e-9696-4d4c-80f6-4e5b988bf94e" vName="fs_valid_to" visible="0"/>
+				<xs:element type="xs:long" uuid="f73cca6b-8f6f-4573-a120-b4cb0f2dc0ba" vName="FS_RELEASE_TO" visible="0"/>
+				<xs:element type="xs:long" uuid="f81893a2-1992-45db-a5c8-48da14d71546" vName="FS_VALID_FROM" visible="0"/>
+				<xs:element type="xs:long" uuid="43f0b88e-9696-4d4c-80f6-4e5b988bf94e" vName="FS_VALID_TO" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key vName="pk_task">
 			<xs:selector xpath="task"/>
 			<xs:attribute xpath="fs_id"/>
-			<xs:attribute xpath="fs_release_to"/>
-			<xs:attribute xpath="fs_valid_from"/>
-			<xs:attribute xpath="fs_valid_to"/>
+			<xs:attribute xpath="FS_RELEASE_TO"/>
+			<xs:attribute xpath="FS_VALID_FROM"/>
+			<xs:attribute xpath="FS_VALID_TO"/>
 		</xs:key>
 		<xs:complexType uuid="51a9a378-5fa1-44cc-b9f1-995a828f1541" vName="transaction_counter" visible="0">
 			<xs:sequence>
-				<xs:element type="xs:long" uuid="ba7c4745-5c5a-4081-be83-a694811d94fd" vName="counter" visible="0"/>
+				<xs:element type="xs:long" uuid="ba7c4745-5c5a-4081-be83-a694811d94fd" vName="COUNTER" visible="0"/>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key autoIncrement="1" vName="pk_transaction_counter">
-			<xs:selector xpath="transaction_counter"/>
-			<xs:attribute xpath="counter"/>
+			<xs:selector xpath="TRANSACTION_COUNTER"/>
+			<xs:attribute xpath="COUNTER"/>
 		</xs:key>
 		<meta name="version">1.1</meta>
 	</xs:element>
