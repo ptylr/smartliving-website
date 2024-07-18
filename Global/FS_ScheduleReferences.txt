@@ -10,6 +10,11 @@ type=TemplateSet
 gid=654ff473-d3e1-3482-b4c9-a3669b4ee593
 class=de.espirit.firstspirit.access.project.TemplateSet
 
+name=php
+type=TemplateSet
+gid=3783501b-76d8-3194-a664-c962350374a3
+class=de.espirit.firstspirit.access.project.TemplateSet
+
 [groups]
 name=Everyone
 type=Group
