@@ -20,6 +20,11 @@ gid=40b6bb18-d72e-49d8-a92d-c78084905626
 uidType=TEMPLATESTORE_FORMATTEMPLATE
 class=de.espirit.firstspirit.store.access.templatestore.FormatTemplateImpl
 
+uid=add_section_toolbar
+gid=80eb2873-20dc-4eef-b0af-4535da74729c
+uidType=TEMPLATESTORE
+class=de.espirit.firstspirit.store.access.templatestore.ScriptImpl
+
 uid=javascript_collector
 gid=57757562-9038-4e33-b8c5-0d7a34cec929
 uidType=TEMPLATESTORE_FORMATTEMPLATE

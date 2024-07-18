@@ -529,7 +529,7 @@ context.setProperty("#urlCreatorSettings", factorySettings); </OBJECT>
 					</FIELD>
 					<FIELD name="_urlCreatorClassName"><NULL/><!-- class java.lang.String --></FIELD>
 					<FIELD name="_urlPrefix">
-						<OBJECT class="java.lang.String">http://localhost:8080</OBJECT>
+						<OBJECT class="java.lang.String">http://localhost:8081</OBJECT>
 					</FIELD>
 					<FIELD name="_useAclDb" type="boolean">true</FIELD>
 					<FIELD name="_variables">
